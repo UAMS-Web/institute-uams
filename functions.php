@@ -22,8 +22,8 @@ add_filter('body_class','uams_field_body_class');
 function uams_field_body_class( $classes ) {
     $classes[] = 'uams-primary';
 
-    $site_url = get_bloginfo( 'url' );
-    //$classes[] = $site_url;
+    $site_url = get_bloginfo( 'name' ); // Originally URL
+    $site_url = strtolower($site_url); // Make it lowercase
 
     if(strpos($site_url, 'cancer') !== false) {
         $classes[] = 'cancer';
@@ -77,3 +77,5 @@ function footer_widget_area_class( $id ) {
     return $class;
     
 }
+
+require( 'setup/class.uams-quicklinks.php' );
