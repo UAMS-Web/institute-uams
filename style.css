@@ -187,6 +187,44 @@ background-size: 410px;
 		background-size: 300px;
 	}
 
+	.myeloma .uams-thinstrip .uams-patch {
+		background-position-y: -40px;
+	}
+	.aging .uams-thinstrip .uams-patch {
+		background-position-y: -87px;
+	}
+	.tri .uams-thinstrip .uams-patch {
+		background-position-y: -133px;
+	}
+	.pri .uams-thinstrip .uams-patch {
+		background-position-y: -180px;
+	}
+	.eye .uams-thinstrip .uams-patch {
+		background-position-y: -227px;
+	}
+	.spine .uams-thinstrip .uams-patch {
+		background-position-y: -273px;
+	}
+	/* Focus & Hover */
+	.myeloma .uams-thinstrip .uams-patch:focus, .myeloma .uams-thinstrip .uams-patch:hover {
+		background-position-y: -41px;
+	}
+	.aging .uams-thinstrip .uams-patch:focus, .aging .uams-thinstrip .uams-patch:hover {
+		background-position-y: -88px;
+	}
+	.tri .uams-thinstrip .uams-patch:focus, .tri .uams-thinstrip .uams-patch:hover {
+		background-position-y: -134px;
+	}
+	.pri .uams-thinstrip .uams-patch:focus, .pri .uams-thinstrip .uams-patch:hover {
+		background-position-y: -181px;
+	}
+	.eye .uams-thinstrip .uams-patch:focus, .eye .uams-thinstrip .uams-patch:hover {
+		background-position-y: -228px;
+	}
+	.spine .uams-thinstrip .uams-patch:focus, .spine .uams-thinstrip .uams-patch:hover {
+		background-position-y: -274px;
+	}
+
 	.flexible-widgets.widget-fourths .widget,
 	.flexible-widgets.widget-halves .widget,
 	.flexible-widgets.widget-thirds .widget {
@@ -215,5 +253,43 @@ background-size: 410px;
 	.eye .uams-thinstrip .uams-patch:focus, .eye .uams-thinstrip .uams-patch:hover,
 	.spine .uams-thinstrip .uams-patch:focus, .spine .uams-thinstrip .uams-patch:hover {
 		background-size: 225px;
+	}
+	/* Logo BG position */
+	.myeloma .uams-thinstrip .uams-patch {
+		background-position-y: -30px;
+	}
+	.aging .uams-thinstrip .uams-patch {
+		background-position-y: -65px;
+	}
+	.tri .uams-thinstrip .uams-patch {
+		background-position-y: -100px;
+	}
+	.pri .uams-thinstrip .uams-patch {
+		background-position-y: -135px;
+	}
+	.eye .uams-thinstrip .uams-patch {
+		background-position-y: -170px;
+	}
+	.spine .uams-thinstrip .uams-patch {
+		background-position-y: -205px;
+	}
+	/* Focus & Hover */
+	.myeloma .uams-thinstrip .uams-patch:focus, .myeloma .uams-thinstrip .uams-patch:hover {
+		background-position-y: -31px;
+	}
+	.aging .uams-thinstrip .uams-patch:focus, .aging .uams-thinstrip .uams-patch:hover {
+		background-position-y: -66px;
+	}
+	.tri .uams-thinstrip .uams-patch:focus, .tri .uams-thinstrip .uams-patch:hover {
+		background-position-y: -101px;
+	}
+	.pri .uams-thinstrip .uams-patch:focus, .pri .uams-thinstrip .uams-patch:hover {
+		background-position-y: -136px;
+	}
+	.eye .uams-thinstrip .uams-patch:focus, .eye .uams-thinstrip .uams-patch:hover {
+		background-position-y: -171px;
+	}
+	.spine .uams-thinstrip .uams-patch:focus, .spine .uams-thinstrip .uams-patch:hover {
+		background-position-y: -206px;
 	}
 }
