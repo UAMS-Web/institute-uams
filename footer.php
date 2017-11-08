@@ -11,20 +11,7 @@
         </div>
 
 
-        <a href="http://www.uams.edu" class="footer-wordmark">University of Arkansas for Medical Sciences</a>
-
-<!--         <h4>Connect with us:</h4>
-
-        <nav aria-label="social networking">
-            <ul class="footer-social">
-                <li><a class="facebook" href="http://facebook.com/uamshealth">Facebook</a></li>
-                <li><a class="twitter" href="http://twitter.com/uamshealth">Twitter</a></li>
-                <li><a class="instagram" href="http://instagram.com/uamshealth">Instagram</a></li>
-                <li><a class="youtube" href="https://www.youtube.com/user/UAMSHealth">YouTube</a></li>
-                <li><a class="linkedin" href="https://www.linkedin.com/company/uams">LinkedIn</a></li>
-                <li><a class="pinterest" href="http://pinterest.com/uamshealth">Pinterest</a></li>
-            </ul>
-        </nav> -->
+        <a href="http://www.uams.edu" class="footer-wordmark">University of Arkansas for Medical Sciences</a> 
 
         <nav aria-label="footer links">
             <ul class="footer-links">

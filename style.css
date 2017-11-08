@@ -174,12 +174,14 @@ background-size: 410px;
 	.myeloma .uams-thinstrip .uams-patch,
 	.aging .uams-thinstrip .uams-patch,
 	.pri .uams-thinstrip .uams-patch,
+	.tri .uams-thinstrip .uams-patch,
 	.eye .uams-thinstrip .uams-patch,
 	.spine .uams-thinstrip .uams-patch,
 	.cancer .uams-thinstrip .uams-patch:focus, .cancer .uams-thinstrip .uams-patch:hover,
 	.myeloma .uams-thinstrip .uams-patch:focus, .myeloma .uams-thinstrip .uams-patch:hover,
 	.aging .uams-thinstrip .uams-patch:focus, .aging .uams-thinstrip .uams-patch:hover,
 	.pri .uams-thinstrip .uams-patch:focus, .pri .uams-thinstrip .uams-patch:hover,
+	.tri .uams-thinstrip .uams-patch:focus, .tri .uams-thinstrip .uams-patch:hover,
 	.eye .uams-thinstrip .uams-patch:focus, .eye .uams-thinstrip .uams-patch:hover,
 	.spine .uams-thinstrip .uams-patch:focus, .spine .uams-thinstrip .uams-patch:hover {
 		background-size: 300px;
@@ -202,12 +204,14 @@ background-size: 410px;
 	.myeloma .uams-thinstrip .uams-patch,
 	.aging .uams-thinstrip .uams-patch,
 	.pri .uams-thinstrip .uams-patch,
+	.tri .uams-thinstrip .uams-patch,
 	.eye .uams-thinstrip .uams-patch,
 	.spine .uams-thinstrip .uams-patch,
 	.cancer .uams-thinstrip .uams-patch:focus, .cancer .uams-thinstrip .uams-patch:hover,
 	.myeloma .uams-thinstrip .uams-patch:focus, .myeloma .uams-thinstrip .uams-patch:hover,
 	.aging .uams-thinstrip .uams-patch:focus, .aging .uams-thinstrip .uams-patch:hover,
 	.pri .uams-thinstrip .uams-patch:focus, .pri .uams-thinstrip .uams-patch:hover,
+	.tri .uams-thinstrip .uams-patch:focus, .tri .uams-thinstrip .uams-patch:hover,
 	.eye .uams-thinstrip .uams-patch:focus, .eye .uams-thinstrip .uams-patch:hover,
 	.spine .uams-thinstrip .uams-patch:focus, .spine .uams-thinstrip .uams-patch:hover {
 		background-size: 225px;
