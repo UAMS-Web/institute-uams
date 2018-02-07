@@ -81,21 +81,34 @@ function footer_widget_area_class( $id ) {
 require( 'setup/class.uams-quicklinks.php' );
 
 /**
- * Enable unfiltered_html capability for Editors.
- *
- * @param  array  $caps    The user's capabilities.
- * @param  string $cap     Capability name.
- * @param  int    $user_id The user ID.
- * @return array  $caps    The user's capabilities, with 'unfiltered_html' potentially added.
+ * Simulate assigning the unfiltered_html capability to a role.
  */
-function km_add_unfiltered_html_capability_to_editors( $caps, $cap, $user_id ) {
+add_action( 'admin_init', 'tsg_kses_remove_filters' );
+function tsg_kses_remove_filters()
+{
+    $tsg_current_user = wp_get_current_user();
 
-	if ( 'unfiltered_html' === $cap && user_can( $user_id, 'adminisrator' ) ) {
-
-		$caps = array( 'unfiltered_html' );
-
-	}
-
-	return $caps;
+    if ( tsg_user_has_role( 'administrator', $tsg_current_user ) ) {
+        kses_remove_filters();
+        // get the the role object
+		//$admin_role = get_role( 'administrator' );
+		// grant the unfiltered_html capability
+		$tsg_current_user->add_cap( 'unfiltered_html', true );
+		}
 }
-add_filter( 'map_meta_cap', 'km_add_unfiltered_html_capability_to_editors', 1, 3 );
+
+/**
+ * Check if a user has a role.
+ */
+function tsg_user_has_role( $role = '', $user = null )
+{
+    $user = $user ? new WP_User( $user ) : wp_get_current_user();
+
+    if ( empty( $user->roles ) )
+        return;
+
+    if ( in_array( $role, $user->roles ) )
+        return true;
+
+    return;
+}
