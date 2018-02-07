@@ -61,7 +61,7 @@ function footer_widget_area_class( $id ) {
     $count = footer_count_widgets( $id );
 
     $class = '';
-    
+
     if ( $count == 1 ) {
         $class .= ' widget-full';
     } elseif ( $count % 3 == 0 ) {
@@ -70,12 +70,32 @@ function footer_widget_area_class( $id ) {
         $class .= ' widget-fourths';
     } elseif ( $count % 2 == 1 ) {
         $class .= ' widget-halves uneven';
-    } else {    
+    } else {
         $class .= ' widget-halves';
     }
 
     return $class;
-    
+
 }
 
 require( 'setup/class.uams-quicklinks.php' );
+
+/**
+ * Enable unfiltered_html capability for Editors.
+ *
+ * @param  array  $caps    The user's capabilities.
+ * @param  string $cap     Capability name.
+ * @param  int    $user_id The user ID.
+ * @return array  $caps    The user's capabilities, with 'unfiltered_html' potentially added.
+ */
+function km_add_unfiltered_html_capability_to_editors( $caps, $cap, $user_id ) {
+
+	if ( 'unfiltered_html' === $cap && user_can( $user_id, 'adminisrator' ) ) {
+
+		$caps = array( 'unfiltered_html' );
+
+	}
+
+	return $caps;
+}
+add_filter( 'map_meta_cap', 'km_add_unfiltered_html_capability_to_editors', 1, 3 );
